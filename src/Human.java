@@ -1,8 +1,7 @@
 public abstract class Human {
-    private int age;
-    private String name;
-    private boolean isMarried;
-
+    protected int age;
+    protected String name;
+    protected boolean isMarried;
 
     public Human(int age, String name, boolean isMarried) {
         this.age = age;
@@ -10,15 +9,11 @@ public abstract class Human {
         this.isMarried = isMarried;
     }
 
-
     public String sayHello(){
         return "Hello!";
     }
 
-    public abstract String sayPosition(){
-        return "I am a human";
-    }
-
+    public abstract String sayPosition();
 
     public int getAge() {
         return age;
