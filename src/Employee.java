@@ -31,6 +31,7 @@ public class Employee extends Human implements Ilearn, Iwork{
     @Override
     public double getPerformance() {
         return salary / 1000;
+    }
 
 
         public String getJob() {
