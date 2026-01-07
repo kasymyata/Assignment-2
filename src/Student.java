@@ -1,4 +1,4 @@
-public class Student extends Human implements Ilearn{
+public final class Student extends Human implements Ilearn {
     private String major;
     private float gpa;
     public static final String uniName = "AITU";
@@ -28,11 +28,11 @@ public class Student extends Human implements Ilearn{
         System.out.println("University: " + uniName);
     }
 
-    public String getOP() {
+    public String getMajor() {
         return major;
     }
 
-    public void setOP(String OP) {
+    public void setMajor(String major) {
         this.major = major;
     }
 
